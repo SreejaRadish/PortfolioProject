@@ -1,0 +1,110 @@
+html, body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;  
+}
+header{
+    height: 80px;
+   /* width: 100%;*/
+    display: grid;
+    grid-template: 1fr / repeat(2 ,1fr);
+   /* justify-items: stretch;*/
+    margin: 0 10px 0 10px;
+    color:rgb(66, 62, 68);
+}
+header p{
+    
+    font-weight:bolder;
+    padding-left: 10px;
+   font-weight: 3em ;
+}
+nav{
+   float: right;
+   padding-right: 10px;
+   
+}
+nav ul{
+    float:right;
+    list-style-type: none;
+    
+}
+nav li{
+   
+    padding: 0px 5px;
+  display: inline-block;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+   }
+   nav li a{
+    text-decoration: none;
+   }
+   .content{
+       height: 650px;
+       width:1300px;
+       margin: 0 auto;
+       padding: 10px;
+       display: flex;
+       flex-direction: row;
+       justify-items: center;
+       align-items: center;
+       row-gap: 10px;
+       column-gap: 10px;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       background-image: linear-gradient(to right, rgb(238, 237, 237), rgb(163, 159, 163));
+   }
+  .contentHeading{
+      font-weight: bold;
+      font-size:24px;
+    
+  }
+  .description{
+      font-size: 16px;
+      line-height: 20px;
+  }
+  #profilePic{
+      border-radius: 10%;
+  }
+  #projects{
+      height: auto;
+      width:1200px;
+      margin-left:5px;
+     /* border : 1px solid darkorchid;*/
+  }
+.projectHeading{
+    font-size: 2em;
+    color: rgb(66, 62, 68);
+    font-weight:bolder;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+   
+   
+}
+.projectImageContainer{
+    width:100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+
+ 
+}
+.projectImageWrapper{
+    margin: 10px;
+    padding: 20px;
+    background-color:rgb(61, 60, 60) ;
+    color:whitesmoke ;
+}
+#projectBtn{
+    background-color:rgb(61, 60, 60);
+    height: 50px;
+    width: 200px;
+    border-radius: 3%;
+    font-size: 1em;
+    border-color:rgb(61, 60, 60);
+   color:whitesmoke;
+   box-shadow: none;
+}

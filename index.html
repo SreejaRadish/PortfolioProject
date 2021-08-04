@@ -3,54 +3,59 @@
     <head>
         <title>My Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h3>SREEJA RADISH</h3>
+            <p>SREEJA RADISH</p>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <div class="content">
                 <div class="imageBlocker">
-                    <img src="Images/istockphoto-938196638-612x612.jpg" height="300px" width="200px">
+                    <img id="profilePic" src="Images/istockphoto-938196638-612x612.jpg" height="400px" width="300px">
                 </div>
                 <div class="contentWrapper">
-                    <p>Hi I'm Sreeja Radish</p>
-                    <p>Junior Web Developer</p>
-                    <p>Technology is my passion and I like to learn new skills and implement them in my work. </p>
+                    <p class="contentHeading">Hi, I'm Sreeja Radish</p>
+                   
+                    <p class="description">I'm a full stack web developer based in Manchester, UK </p>
+                    <button id="projectBtn">My Projects</button>
                 </div>
             </div>
             <section id="projects">
+                <h2 class="projectHeading">Projects</h2>
                 <div class="projectImageContainer">
                     <div class="projectImageWrapper">
-                        <a href="https://sreejaradish.github.io/CompanyHomePageProject/" target="_blank"><img src="Images/CompanyHomePageProject.png" height="250px" width="200px" alt="CompanyHomePageProject" 
+                        <a href="https://sreejaradish.github.io/CompanyHomePageProject/" target="_blank"><img src="Images/CompanyHomePageProject.png" height="300px" width="275px" alt="CompanyHomePageProject" 
                             ></a>
                             <h3 class="imageHeader">Company Home Page </h3>
                             <p class="imagePara">I have designed this home page for a imaginary Yoga training Institute using HTML and CSS. </p>
                     </div>
                     <div class="projectImageWrapper">
-                        <a href="https://sreejaradish.github.io/excursion/" target="_blank"><img src="Images/excursion.png" height="250px" width="200px" alt="Excursion Project" 
+                        <a href="https://sreejaradish.github.io/excursion/" target="_blank"><img src="Images/excursion.png" height="300px" width="275px" alt="Excursion Project" 
                             ></a>
                             <h3 class="imageHeader">Excursion </h3>
                             <p class="imagePara">This web page  advertises a mobile app which helps users record and share their
                                  experiences. </p>
                     </div>
                     <div class="projectImageWrapper">
-                        <a href="https://sreejaradish.github.io/CyclingEventProject/" target="_blank"><img src="Images/FamilyCyclingEventProject.png" height="250px" width="200px" alt="Excursion Project" 
+                        <a href="https://sreejaradish.github.io/CyclingEventProject/" target="_blank"><img src="Images/FamilyCyclingEventProject.png" height="300px" width="275px" alt="Excursion Project" 
                             ></a>
                             <h3 class="imageHeader">Family Cycling Event</h3>
                             <p class="imagePara">This web page  advertises a family cycling event  which helps users to book for the event.
                             </p>
                     </div>
                     <div class="projectImageWrapper">
-                        <a href="file:///D:/Course-ITCareerSwitch/FullStackDevelopment/TeaCozyProject/index.html" target="_blank"><img src="Images/TeaCozyProject.png" height="250px" width="200px" alt="Excursion Project" 
+                        <a href="file:///D:/Course-ITCareerSwitch/FullStackDevelopment/TeaCozyProject/index.html" target="_blank"><img src="Images/TeaCozyProject.png" height="300px" width="275px" alt="Excursion Project" 
                             ></a>
                             <h3 class="imageHeader">Tea Cozy Page</h3>
                             <p class="imagePara">In this project, I've created a fictional tea shop website.
