@@ -38,6 +38,7 @@ nav li{
     font-weight: bold;
     font-size: 1em;
     text-align: left;
+    color:black;
    }
    nav li a{
     text-decoration: none;
@@ -58,7 +59,7 @@ nav li{
    }
   .contentHeading{
       font-weight: bold;
-      font-size:24px;
+      font-size:35px;
     
   }
   .description{
@@ -86,7 +87,7 @@ nav li{
 }
 .projectImageContainer{
     width:100%;
-    height: 500px;
+    height: 700px;
     display: flex;
     flex-direction: row;
 
@@ -97,6 +98,15 @@ nav li{
     padding: 20px;
     background-color:rgb(61, 60, 60) ;
     color:whitesmoke ;
+  
+}
+.projectImageWrapper img{
+    transition: 100ms;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+.projectImageWrapper img:hover{
+    transform: translate3d(5px,0px,5px);  
+    box-shadow: 0px 0px 10px rgba(243, 235, 235, 0.8);
 }
 #projectBtn{
     background-color:rgb(61, 60, 60);
@@ -108,3 +118,57 @@ nav li{
    color:whitesmoke;
    box-shadow: none;
 }
+@media screen and (max-width: 800px) {
+    header, .content{
+        padding: 10px;
+    }
+
+    #projects{
+        width:100%;
+        position: relative;
+       
+    }
+.projectImageContainer{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+   
+}
+.projectImageWrapper{
+    width:275px;
+}
+.content{
+   width:auto;
+    display:flex;
+    flex-direction: column;
+    justify-items:center;
+    align-items: center;
+}
+#projectBtn{
+ width:100%;
+}
+}
+@media screen and (max-width: 710px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: center;
+       height:100px;
+    }
+    header p{
+    margin-top: 5px;
+      }
+  }
+  @media only screen and (max-width: 450px){
+    .contentHeading{
+        font-weight: bold;
+        font-size:25px;
+      
+    }
+    .description{
+        font-size: 16px;
+        line-height: 20px;
+    }
+  }
